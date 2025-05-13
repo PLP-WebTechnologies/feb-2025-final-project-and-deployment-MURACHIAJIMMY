@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #0077b6;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.home img {
+    width: 80%;
+    max-width: 800px;
+
+}
+
+.vision-mission {
+    margin-top: 20px;
+    transition: transform 0.5s;
+}
+
+.vision-mission:hover {
+    transform: rotate(360deg);
+}
+
+.text {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.vision-mission:hover .text {
+    opacity: 1;
+}
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 50px auto;
+            gap: 20px;
+        }
+        .flex-item {
+            width: 300px;
+            height: 200px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.6s ease, background-color 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            position: relative;
+        }
+        .flex-item:hover {
+            background-color: #0056b3;
+        }
+        .flex-item .content {
+            position: absolute;
+            backface-visibility: hidden;
+            padding: 20px;
+        }
+        .flex-item .front {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        .flex-item .back {
+            transform: rotateY(180deg);
+            font-size: 1rem;
+        }
+        .flex-item.clicked {
+            transform: rotateY(360deg);
+        }

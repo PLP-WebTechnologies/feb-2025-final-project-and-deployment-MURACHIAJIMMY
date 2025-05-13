@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 50px auto;
+            gap: 20px;
+        }
+        .flex-item {
+            width: 300px;
+            height: 200px;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.6s ease, background-color 0.3s ease;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+            position: relative;
+        }
+        .flex-item:hover {
+            background-color: #0056b3;
+        }
+        .flex-item .content {
+            position: absolute;
+            backface-visibility: hidden;
+            padding: 20px;
+        }
+        .flex-item .front {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        .flex-item .back {
+            transform: rotateY(180deg);
+            font-size: 1rem;
+        }
+        .flex-item.clicked {
+            transform: rotateY(360deg);
+        }
+    </style>
+    <script>
+    
+</script>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <div class="content front"></div>
+            <h1>HISTORY</h1>
+            <p>Our school was founded in 1990 with the mission to provide quality education to all.</p>
+        </div>
+        <div class="flex-item">
+            <div class="content front"></div>
+            <h1>VISION</h1>
+            <p>To be a leading institution that inspires innovation and excellence in education.</p>
+        </div>
+        <div class="flex-item">
+            <div class="content front"></div>
+            <h1>Mission</h1>
+            <p>To empower students with knowledge, skills, and values for a brighter future.</p>
+        </div>
+    </div>
+
+    <!-- New Section: Our Team -->
+    <section style="margin: 50px auto; max-width: 1200px; text-align: center;">
+        <h2>Our Team</h2>
+        <p>Meet the dedicated team led by our principal, Mr. Stephen Pertet.</p>
+        <div class="team-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <!-- Principal -->
+            <div class="team-member" style="width: 200px; text-align: center;">
+                <img src="principal.jpg" alt="Mr. Stephen Pertet" style="width: 100%; border-radius: 50%; border: 2px solid #007BFF;">
+                <h3 style="margin: 10px 0;">Mr. Stephen Pertet</h3>
+                <p>Principal</p>
+            </div>
+            <!-- Teachers -->
+             <div class="team-member" style="width: 200px; text-align: center;">
+                <img src="teacher1.jpg" alt="Ms. Jane Doe" style="width: 100%; border-radius: 50%; border: 2px solid #007BFF;">
+                <h3 style="margin: 10px 0;">Ms. Jane Doe</h3>
+                <p>Mathematics Teacher</p>
+</div>
+            
+</body>
+</html>
